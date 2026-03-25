@@ -80,7 +80,7 @@
 - Starting: запускается.
 - Rented: выдан в аренду.
 
-4.3 Статусы аренды (RentalStatus)
+Статусы аренды (RentalStatus)
 - PendingStart: сервер выключен, ожидается запуск.
 - Active: аренда активна.
 - Released: аренда завершена.
@@ -90,7 +90,7 @@ Api вызовы
 Базовый адрес: http://localhost:5055
 Swagger: http://localhost:5055/swagger/index.html
 
-5.1 Добавление сервера
+Добавление сервера
 POST /api/servers
 Body:
 {
@@ -150,7 +150,7 @@ GET /api/rentals/{rentalId}/readiness
   - текущий статус аренды
   - время готовности.
 
-5.6 Ручное освобождение
+Ручное освобождение
 POST /api/rentals/{rentalId}/release
 
 Что происходит:
@@ -216,8 +216,7 @@ POST /api/rentals/{rentalId}/release
 - InitialCreate
 - RemoveUsersTable
 - AddRentals
-- AddQueryIndexes
-
+ AddQueryIndexes
 
 Тестовый проект: tests/ServerDistorApi.Tests
 

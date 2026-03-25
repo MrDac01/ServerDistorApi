@@ -1,0 +1,40 @@
+@ServerDistorApi_HostAddress = http://localhost:5055
+
+GET {{ServerDistorApi_HostAddress}}/api/servers
+Accept: application/json
+
+###
+
+POST {{ServerDistorApi_HostAddress}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "linux",
+  "hardwareGB": 64,
+  "coreCPU": 16,
+  "isPoweredOn": false
+}
+
+###
+
+GET {{ServerDistorApi_HostAddress}}/api/servers/search?os=linux&minHardwareGb=32&minCoreCpu=8
+Accept: application/json
+
+###
+
+POST {{ServerDistorApi_HostAddress}}/api/rentals
+Content-Type: application/json
+
+{
+  "serverId": 1,
+  "clientId": "amir"
+}
+
+###
+
+GET {{ServerDistorApi_HostAddress}}/api/rentals/1/readiness
+Accept: application/json
+
+###
+
+POST {{ServerDistorApi_HostAddress}}/api/rentals/1/release

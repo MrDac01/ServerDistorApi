@@ -1,0 +1,167 @@
+@host = http://localhost:5055
+
+### 1
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "linux",
+  "hardwareGB": 16,
+  "coreCPU": 4,
+  "isPoweredOn": true
+}
+
+### 2
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "linux",
+  "hardwareGB": 32,
+  "coreCPU": 8,
+  "isPoweredOn": true
+}
+
+### 3
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "linux",
+  "hardwareGB": 64,
+  "coreCPU": 16,
+  "isPoweredOn": false
+}
+
+### 4
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "linux",
+  "hardwareGB": 128,
+  "coreCPU": 32,
+  "isPoweredOn": true
+}
+
+### 5
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "windows",
+  "hardwareGB": 16,
+  "coreCPU": 4,
+  "isPoweredOn": true
+}
+
+### 6
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "windows",
+  "hardwareGB": 32,
+  "coreCPU": 8,
+  "isPoweredOn": false
+}
+
+### 7
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "windows",
+  "hardwareGB": 64,
+  "coreCPU": 16,
+  "isPoweredOn": true
+}
+
+### 8
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "windows",
+  "hardwareGB": 128,
+  "coreCPU": 24,
+  "isPoweredOn": false
+}
+
+### 9
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "ubuntu",
+  "hardwareGB": 24,
+  "coreCPU": 6,
+  "isPoweredOn": true
+}
+
+### 10
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "ubuntu",
+  "hardwareGB": 48,
+  "coreCPU": 12,
+  "isPoweredOn": true
+}
+
+### 11
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "ubuntu",
+  "hardwareGB": 96,
+  "coreCPU": 24,
+  "isPoweredOn": false
+}
+
+### 12
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "debian",
+  "hardwareGB": 8,
+  "coreCPU": 2,
+  "isPoweredOn": true
+}
+
+### 13
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "debian",
+  "hardwareGB": 32,
+  "coreCPU": 8,
+  "isPoweredOn": false
+}
+
+### 14
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "centos",
+  "hardwareGB": 64,
+  "coreCPU": 12,
+  "isPoweredOn": true
+}
+
+### 15
+POST {{host}}/api/servers
+Content-Type: application/json
+
+{
+  "os": "centos",
+  "hardwareGB": 128,
+  "coreCPU": 32,
+  "isPoweredOn": false
+}
+
